@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>I WANT YOU RIGHT NOW!</title>
+    <style>
+        body {
+            display: flex;
+         flex-direction: column;
+         align-items: center;
+          justify-content: center;
+         height: 100vh;
+
+            background-color: #060606;
+            font-size: 24px;
+        }
+
+        button:hover {
+            background-color: #4fe8d4;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="color: #ffffff;">I WANT YOU RIGHT NOW!</h1>
+    <button id="sim">Sim</button>
+    <button id="no">NO</button>
+
+    <script>
+        var nao = document.getElementById("no");
+
+        nao.addEventListener("click", function () {
+            var randomX = Math.floor(Math.random() * window.innerWidth);
+            var randomY = Math.floor(Math.random() * window.innerHeight);
+
+            nao.style.position = "absolute";
+            nao.style.top = randomY + "px";
+            nao.style.left = randomX + "px";
+        });
+
+        var sim = document.getElementById("sim");
+        sim.addEventListener("click", function () {
+            window.location.href = "https://youtu.be/bpOSxM0rNPM?si=2ZHBRt4ZDzbT1WZW";
+        });
+    </script>
+
+</body>
+
+</html>
